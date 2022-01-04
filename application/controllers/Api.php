@@ -96,7 +96,7 @@ class Api extends CI_Controller {
 				'difficulty'		=>	$this->input->post('difficulty')
 			);
 
-			$this->api_model->update_api($this->input->post('id'), $data);
+			$this->api_model->update_api($this->input->post('id_champion'), $data);
 
 			$array = array(
 				'success'		=>	true
